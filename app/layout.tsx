@@ -1,3 +1,4 @@
+import { Authenticated } from "convex/react";
 import { ConvexClientProvider } from "./providers/convex-client-provider";
 
 export const metadata = {
@@ -13,7 +14,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-          <ConvexClientProvider>{children}</ConvexClientProvider>
+          <ConvexClientProvider>
+            {/* Only render children if it is authenticated */}
+            {children}
+            </ConvexClientProvider>
       </body>
     </html>
   );
