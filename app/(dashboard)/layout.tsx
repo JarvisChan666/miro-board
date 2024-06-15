@@ -3,6 +3,7 @@ import React from "react";
 import { OrgSidebar } from "./_components/org-sidebar";
 import {Navbar} from "./_components/navbar"
 import "../globals.css"; // 这个必须导入
+// children 属性的类型是 React.ReactNode，它是一个可以表示任何合法的 React 子节点的类型，包括元素、字符串、数字、数组、Fragment 等。
 interface DashboardLayoutProps {
   children: React.ReactNode;
 }
