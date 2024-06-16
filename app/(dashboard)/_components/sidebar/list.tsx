@@ -15,7 +15,7 @@ export function List() {
   });
 
   if (!userMemberships.data?.length) return null;
-
+// return all the item
   return (
     <ul className="space-y-4">
       {userMemberships.data?.map((mem) => (
