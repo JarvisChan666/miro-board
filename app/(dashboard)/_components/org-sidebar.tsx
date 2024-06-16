@@ -14,6 +14,7 @@ const font = Poppins({
   weight: ["600"],
 });
 
+// TODO: phone can use organization board too, using unfold bar 
 export function OrgSidebar() {
     const searchParams = useSearchParams();
     const favorites = searchParams.get("favorites");
@@ -23,8 +24,8 @@ export function OrgSidebar() {
       <Link href="/">
         <div className="flex items-center gap-x-2">
           <Image src="/logo.svg" alt="Logo" height={60} width={60} />
-          <span className={cn("font-semibold text-2xl", font.className)}>
-            Board
+          <span className={cn("font-semibold text-1xl", font.className)}>
+            Bunnie Board
           </span>
         </div>
       </Link>

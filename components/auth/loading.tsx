@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
+import { Poppins } from "next/font/google";
+
+const font = Poppins({
+  subsets: ["latin"],
+  weight: ["600"],
+});
 
 export function Loading() {
   const [loadingText, setLoadingText] = useState("loading");
@@ -27,8 +34,10 @@ export function Loading() {
           style={{ objectFit: "contain" }}
           className="animate-pulse duration-700"
         />
-        <div className="text-white text-2xl font-mono animate-pulse justify-center">
-          {loadingText}
+        <div className={cn("font-semibold text-1xl", font.className)}>
+          <div className="text-white text-2xl font-mono animate-pulse justify-center ">
+            {loadingText}
+          </div>
         </div>
       </div>
     </div>
