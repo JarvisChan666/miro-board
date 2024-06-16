@@ -17,7 +17,7 @@ export function EmptyOrg() {
             width={200}
             />
             <h2 className="text-2xl font-semibond mt-4">
-                Welcome to Bunnie Board
+                Welcome to Bunnies Board
             </h2>
             <p className="text-muted-foreground text-sm mt-2">
                 Create an organization to get started
