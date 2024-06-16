@@ -1,8 +1,5 @@
-'use client'
-
 import { Authenticated } from "convex/react";
 import { ConvexClientProvider } from "./providers/convex-client-provider";
-import { Head } from "next/document";
 
 export default function RootLayout({
   children,
