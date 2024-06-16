@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 export function SearchInput() {
   const router = useRouter();
   const [value, setValue] = useState("");
-  const debouncedValue = useDebounceValue(value, 500);
+  const [debouncedValue] = useDebounceValue(value, 500);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value)
@@ -32,7 +32,7 @@ useEffect(() => {
       <Input
         className="w-full max-w-[516px] pl-9"
         placeholder="Search boards"
-        onChange={value}
+        onChange={handleChange}
       />
     </div>
   );
