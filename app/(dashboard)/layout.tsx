@@ -13,6 +13,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     // h-full:height=100%
     <main className="h-full">
       <Sidebar />
+      {/* sidebar w-[60px], so we pl-[60px] */}
       <div className="pl-[60px] h-full">
         <div className="flex gap-x-3 h-full">
           <OrgSidebar />
